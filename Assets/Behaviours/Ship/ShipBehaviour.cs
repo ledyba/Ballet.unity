@@ -13,20 +13,20 @@ public class ShipBehaviour : MonoBehaviour
   {
     Debug.Log(Gamepad.all.Count);
     Debug.Log(Keyboard.KeyCount);
-    this._keyboard = Keyboard.current;
-    this._pad = Gamepad.current;
+    _keyboard = Keyboard.current;
+    _pad = Gamepad.current;
   }
 
   // Update is called once per frame
   void Update()
   {
-    this.UpdateGamepad();
-    this.UpdateKeyboard();
+    UpdateGamepad();
+    UpdateKeyboard();
   }
 
   private void UpdateKeyboard()
   {
-    var key = this._keyboard;
+    var key = _keyboard;
     if (key == null)
     {
       return;
@@ -52,7 +52,7 @@ public class ShipBehaviour : MonoBehaviour
 
   private void UpdateGamepad()
   {
-    var pad = this._pad;
+    var pad = _pad;
     if (pad == null)
     {
       return;

@@ -21,10 +21,10 @@ public class ShipBehaviour : MonoBehaviour
   void Update()
   {
     this.UpdateGamepad();
-    this.UpdateKeybaord();
+    this.UpdateKeyboard();
   }
 
-  private void UpdateKeybaord()
+  private void UpdateKeyboard()
   {
     var key = this._keyboard;
     if (key == null)
@@ -48,7 +48,6 @@ public class ShipBehaviour : MonoBehaviour
     {
       transform.Translate(+0.01f, 0, 0);
     }
-
   }
 
   private void UpdateGamepad()

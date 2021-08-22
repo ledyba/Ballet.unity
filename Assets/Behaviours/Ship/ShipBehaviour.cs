@@ -69,6 +69,7 @@ public class ShipBehaviour : MonoBehaviour
     {
       transform.Translate(-0.01f, 0, 0);
     }
+
     if (pad.dpad.right.isPressed)
     {
       transform.Translate(0.01f, 0, 0);

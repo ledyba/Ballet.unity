@@ -11,8 +11,8 @@ public class ShipBehaviour : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-    Debug.Log(Gamepad.all.Count);
-    Debug.Log(Keyboard.KeyCount);
+    Debug.Log($"Gamepads: {Gamepad.all.Count}", gameObject);
+    Debug.Log($"Keys: {Keyboard.KeyCount}", gameObject);
     _keyboard = Keyboard.current;
     _pad = Gamepad.current;
   }

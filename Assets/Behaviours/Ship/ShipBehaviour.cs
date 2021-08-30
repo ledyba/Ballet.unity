@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -74,6 +75,11 @@ public class ShipBehaviour : MonoBehaviour
     {
       transform.Translate(0.01f, 0, 0);
     }
+  }
+  // Applies an upwards force to all rigidbodies that enter the trigger.
+  private void OnTriggerEnter2D(Collider2D other)
+  {
+    Debug.Log($"Collided: {other.name}");
   }
 }
 

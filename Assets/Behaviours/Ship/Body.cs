@@ -6,13 +6,14 @@ namespace Behaviours.Ship
   public class Body : MonoBehaviour
   {
     public double life = 100.0;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
     }
 

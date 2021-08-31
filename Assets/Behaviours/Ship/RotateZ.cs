@@ -1,9 +1,8 @@
 using UnityEngine;
-using UnityEngine.Playables;
 
-namespace Behaviours
+namespace Behaviours.Ship
 {
-  public class Sequencer : MonoBehaviour
+  public class RotateZ : MonoBehaviour
   {
     // Start is called before the first frame update
     private void Start()
@@ -13,6 +12,7 @@ namespace Behaviours
     // Update is called once per frame
     private void Update()
     {
+      transform.Rotate(0.0f, 0.0f, -180 * Time.deltaTime);
     }
   }
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
@@ -6,29 +7,95 @@ namespace Behaviours.Ship
 {
   public class Controller : MonoBehaviour
   {
-    private Gamepad _pad;
-
-    private Keyboard _keyboard;
-
+    private const float Diagonal = 0.70710678118f;
+    
+    private struct Input
+    {
+      public bool Up;
+      public bool Down;
+      public bool Left;
+      public bool Right;
+    }
+  
     // Start is called before the first frame update
     private void Start()
     {
-      Debug.Log($"Gamepads: {Gamepad.all.Count}", gameObject);
-      Debug.Log($"Keys: {Keyboard.KeyCount}", gameObject);
-      _keyboard = Keyboard.current;
-      _pad = Gamepad.current;
     }
 
     // Update is called once per frame
     private void Update()
     {
-      UpdateGamepad();
-      UpdateKeyboard();
+      var input = new Input();
+      foreach (var pad in Gamepad.all)
+      {
+        UpdateGamepad(pad, ref input);
+      }
+      UpdateKeyboard(Keyboard.current, ref input);
+      var x = 0;
+      var y = 0;
+      if (input.Up)
+      {
+        y++;
+      }
+      if (input.Down)
+      {
+        y--;
+      }
+
+      if (input.Left)
+      {
+        x--;
+      }
+      if (input.Right)
+      {
+        x++;
+      } 
+      var dx = 0.0f;
+      var dy = 0.0f;
+      switch((x,y))
+      {
+        case (-1, -1):
+          dx = -Diagonal;
+          dy = -Diagonal;
+          break;
+        case (-1, 0):
+          dx = -1;
+          break;
+        case (-1, 1):
+          dx = -Diagonal;
+          dy = Diagonal;
+          break;
+        case (0, -1):
+          dy = -1;
+          break;
+        case (0, 0):
+          break;
+        case (0, 1):
+          dy = 1;
+          break;
+        case (1, -1):
+          dx = Diagonal;
+          dy = -Diagonal;
+          break;
+        case (1, 0):
+          dx = 1;
+          break;
+        case (1, 1):
+          dx = Diagonal;
+          dy = Diagonal;
+          break;
+      }
+
+      var trans = transform;
+      var pos = trans.position;
+      pos.x += dx;
+      pos.y += dy;
+      trans.position = pos;
+      Debug.Log($"Move: {dx}, {dy}");
     }
 
-    private void UpdateKeyboard()
+    private void UpdateKeyboard(Keyboard key, ref Input input)
     {
-      var key = _keyboard;
       if (key == null)
       {
         return;
@@ -36,51 +103,45 @@ namespace Behaviours.Ship
 
       if (key.downArrowKey.isPressed)
       {
-        transform.Translate(0, -0.01f, 0);
+        input.Down = true;
       }
 
       if (key.upArrowKey.isPressed)
       {
-        transform.Translate(0, +0.01f, 0);
+        input.Up = true;
       }
 
       if (key.leftArrowKey.isPressed)
       {
-        transform.Translate(-0.01f, 0, 0);
+        input.Left = true;
       }
 
       if (key.rightArrowKey.isPressed)
       {
-        transform.Translate(+0.01f, 0, 0);
+        input.Right = true;
       }
     }
 
-    private void UpdateGamepad()
+    private void UpdateGamepad(Gamepad pad, ref Input input)
     {
-      var pad = _pad;
-      if (pad == null)
-      {
-        return;
-      }
-
       if (pad.dpad.down.isPressed)
       {
-        transform.Translate(0, -0.01f, 0);
+        input.Down = true;
       }
 
       if (pad.dpad.up.isPressed)
       {
-        transform.Translate(0, 0.01f, 0);
+        input.Up = true;
       }
 
       if (pad.dpad.left.isPressed)
       {
-        transform.Translate(-0.01f, 0, 0);
+        input.Left = true;
       }
 
       if (pad.dpad.right.isPressed)
       {
-        transform.Translate(0.01f, 0, 0);
+        input.Right = true;
       }
     }
   }

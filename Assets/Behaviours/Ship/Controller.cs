@@ -21,10 +21,12 @@ namespace Behaviours.Ship
     private void Update()
     {
       var move = _input.currentActionMap["Move"].ReadValue<Vector2>();
+      move *= Time.deltaTime;
+      move *= 10.0f;
       var trans = transform;
       var pos = trans.position;
-      pos.x += move.x * 0.025f;
-      pos.y += move.y * 0.025f;
+      pos.x += move.x;
+      pos.y += move.y;
       trans.position = pos;
     }
 

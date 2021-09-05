@@ -10,6 +10,7 @@ namespace Behaviours.Ship
     private const float Diagonal = 0.70710678118f;
 
     private PlayerInput _input;
+    public Camera camera3d;
     
     // Start is called before the first frame update
     private void Start()
@@ -27,7 +28,12 @@ namespace Behaviours.Ship
       var pos = trans.position;
       pos.x += move.x;
       pos.y += move.y;
-      trans.position = pos;
+
+      var vp = camera3d.WorldToViewportPoint(pos);
+      vp.y = Mathf.Clamp(vp.x, 0.05f, 0.95f);
+      vp.x = Mathf.Clamp(vp.x, 0.3f, 0.7f);
+
+      trans.position = camera3d.ViewportToWorldPoint(vp);
     }
 
   }

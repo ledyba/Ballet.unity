@@ -30,7 +30,7 @@ namespace Behaviours.Ship
       pos.y += move.y;
 
       var vp = camera3d.WorldToViewportPoint(pos);
-      vp.y = Mathf.Clamp(vp.x, 0.05f, 0.95f);
+      vp.y = Mathf.Clamp(vp.y, 0.05f, 0.95f);
       vp.x = Mathf.Clamp(vp.x, 0.3f, 0.7f);
 
       trans.position = camera3d.ViewportToWorldPoint(vp);

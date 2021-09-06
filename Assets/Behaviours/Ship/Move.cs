@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 
 namespace Behaviours.Ship
 {
-  public class Controller : MonoBehaviour
+  public class Move : MonoBehaviour
   {
     private const float Diagonal = 0.70710678118f;
 

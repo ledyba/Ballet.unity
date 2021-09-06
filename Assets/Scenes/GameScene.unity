@@ -946,6 +946,7 @@ GameObject:
   - component: {fileID: 1833732102}
   - component: {fileID: 1833732104}
   - component: {fileID: 1833732103}
+  - component: {fileID: 1833732108}
   - component: {fileID: 1833732105}
   - component: {fileID: 1833732106}
   - component: {fileID: 1833732107}
@@ -1065,6 +1066,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1833732108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833732101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f230471c8549460e962bf0e1a5f7f1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dolly: {fileID: 1122233356}
+  bullet: {fileID: 4412941047043867166, guid: e24ea4c0bc28ca34c841875c38452324, type: 3}
 --- !u!1 &1938207440 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c8c7737128f0b744ae1a923d2eb5b0d, type: 3}

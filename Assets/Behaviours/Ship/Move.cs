@@ -7,19 +7,19 @@ namespace Behaviours.Ship
 {
   public class Move : MonoBehaviour
   {
-    private PlayerInput _input;
+    private PlayerInput _playerInput;
     public Camera camera3d;
     
     // Start is called before the first frame update
     private void Start()
     {
-      _input = GetComponent<PlayerInput>();
+      _playerInput = GetComponent<PlayerInput>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-      var move = _input.currentActionMap["Move"].ReadValue<Vector2>();
+      var move = _playerInput.currentActionMap["Move"].ReadValue<Vector2>();
       move *= Time.deltaTime;
       move *= 10.0f;
       var trans = transform;

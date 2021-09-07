@@ -20,8 +20,7 @@ namespace Behaviours.Ship
     private void Update()
     {
       var move = _playerInput.currentActionMap["Move"].ReadValue<Vector2>();
-      move *= Time.deltaTime;
-      move *= 10.0f;
+      move *= Time.deltaTime * 10.0f;
       var trans = transform;
       var pos = trans.position;
       pos.x += move.x;

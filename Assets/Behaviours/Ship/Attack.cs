@@ -2,13 +2,14 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
+using UnityEngine.Serialization;
 
 namespace Behaviours.Ship
 {
   public class Attack : MonoBehaviour
   {
     private PlayerInput _input;
-    public GameObject dolly;
+    public GameObject stage;
     public GameObject bullet;
     
     // Start is called before the first frame update
@@ -23,7 +24,7 @@ namespace Behaviours.Ship
       var attacked = _input.currentActionMap["Attack"].triggered;
       if (attacked)
       {
-        Instantiate(bullet, transform.position, Quaternion.identity, dolly.transform);
+        Instantiate(bullet, transform.position, Quaternion.identity, stage.transform);
       }
     }
 

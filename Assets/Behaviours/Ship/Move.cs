@@ -7,8 +7,6 @@ namespace Behaviours.Ship
 {
   public class Move : MonoBehaviour
   {
-    private const float Diagonal = 0.70710678118f;
-
     private PlayerInput _input;
     public Camera camera3d;
     

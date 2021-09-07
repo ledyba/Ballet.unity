@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5158424383861391979}
   - component: {fileID: 9153275481107411208}
   - component: {fileID: 595539835113213518}
+  - component: {fileID: 3622862340630131223}
   m_Layer: 0
   m_Name: EnemyBlack
   m_TagString: Untagged
@@ -119,3 +120,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3622862340630131223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6671691240320934846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b76515e9eff4df88ab7fd5111a64c59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

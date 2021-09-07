@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5553626506882862080}
   - component: {fileID: 924533128359972282}
   - component: {fileID: 8860623553454926171}
+  - component: {fileID: 6522215792991024280}
   m_Layer: 0
   m_Name: EnemyWhite
   m_TagString: Untagged
@@ -119,3 +120,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6522215792991024280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202175295103823317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b76515e9eff4df88ab7fd5111a64c59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

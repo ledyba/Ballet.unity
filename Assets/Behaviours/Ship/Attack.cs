@@ -21,8 +21,7 @@ namespace Behaviours.Ship
     // Update is called once per frame
     private void Update()
     {
-      var attacked = _input.currentActionMap["Attack"].triggered;
-      if (attacked)
+      if (_input.currentActionMap["Attack"].triggered)
       {
         Instantiate(bullet, transform.position, Quaternion.identity, stage.transform);
       }

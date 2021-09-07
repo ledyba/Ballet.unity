@@ -1029,6 +1029,7 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 21b56e1c3385bb941b02549c66d5a860, type: 2}
     - {fileID: 11400000, guid: 376ded7e78844f54d838f60f8198d7da, type: 2}
+    - {fileID: 0}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -1058,6 +1059,8 @@ MonoBehaviour:
             m_StringArgument: 1
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &1825427537
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ namespace Behaviours.Ship
     private void OnTriggerEnter2D(Collider2D other)
     {
       Debug.Log("Collided");
-      this.life -= 100;
+      life -= 100;
     }
   }
 }

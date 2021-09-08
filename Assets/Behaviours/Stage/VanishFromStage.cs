@@ -20,15 +20,17 @@ namespace Behaviours
       if (children.Length == 0) {
         return;
       }
-      foreach(var trans in children) {
-        var vp = camera3d.WorldToViewportPoint(trans.position);
+
+      foreach (Transform child in transform)
+      {
+        var vp = camera3d.WorldToViewportPoint(child.position);
         if (
           vp.y > 1 ||
           vp.y < 0 ||
           vp.x < 0.2 ||
           vp.x > 0.8)
         {
-          Destroy(trans.gameObject);
+          Destroy(child.gameObject);
         }
       }
     }

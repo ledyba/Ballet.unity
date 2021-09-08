@@ -16,11 +16,6 @@ namespace Behaviours
     // Update is called once per frame
     private void Update()
     {
-      var children = GetComponentsInChildren<Transform>();
-      if (children.Length == 0) {
-        return;
-      }
-
       foreach (Transform child in transform)
       {
         var vp = camera3d.WorldToViewportPoint(child.position);

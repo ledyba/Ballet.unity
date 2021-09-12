@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
 
-namespace Behaviours.Ship
+namespace Ship
 {
   public class Move : MonoBehaviour
   {

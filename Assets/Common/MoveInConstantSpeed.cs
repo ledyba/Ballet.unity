@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Behaviours
+namespace Common
 {
   public class MoveInConstantSpeed : MonoBehaviour
   {

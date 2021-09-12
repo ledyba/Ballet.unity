@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Behaviours.Ship
+namespace Ship
 {
   public class Body : MonoBehaviour
   {

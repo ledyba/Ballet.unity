@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
 
-namespace Behaviours
+namespace Common
 {
   public class VanishFromStage : MonoBehaviour
   {

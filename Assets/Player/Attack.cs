@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Playables;
 using UnityEngine.Serialization;
 
-namespace Behaviours.Ship
+namespace Ship
 {
   public class Attack : MonoBehaviour
   {

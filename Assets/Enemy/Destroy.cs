@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Behaviours.Enemy
+namespace Enemy
 {
   public class Destroy: MonoBehaviour
   {
@@ -9,6 +9,6 @@ namespace Behaviours.Enemy
     {
       Debug.Log("Trigger: "+ other.gameObject.name);
       Destroy(gameObject);
-    }
+    } 
   }
 }

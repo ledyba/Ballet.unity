@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Ship
+namespace Player
 {
   public class Body : MonoBehaviour
   {

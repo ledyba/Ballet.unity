@@ -1,9 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Playables;
 
-namespace Ship
+namespace Player
 {
   public class Move : MonoBehaviour
   {

@@ -8,12 +8,7 @@ namespace Common
   public class VanishFromStage : MonoBehaviour
   {
     public Camera camera3d;
-    // Start is called before the first frame update
-    private void Start()
-    {
-    }
 
-    // Update is called once per frame
     private void Update()
     {
       foreach (Transform child in transform)

@@ -9,7 +9,6 @@ namespace Ship
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-      Debug.Log("Collided");
       life -= 100;
     }
   }

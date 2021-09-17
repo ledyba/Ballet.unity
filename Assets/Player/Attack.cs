@@ -12,13 +12,11 @@ namespace Ship
     public GameObject stage;
     public GameObject bullet;
     
-    // Start is called before the first frame update
     private void Start()
     {
       _input = GetComponent<PlayerInput>();
     }
 
-    // Update is called once per frame
     private void Update()
     {
       if (_input.currentActionMap["Attack"].triggered)

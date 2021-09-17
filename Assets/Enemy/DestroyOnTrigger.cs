@@ -3,11 +3,10 @@ using UnityEngine;
 
 namespace Enemy
 {
-  public class Destroy: MonoBehaviour
+  public class DestroyOnTrigger: MonoBehaviour
   {
     private void OnTriggerEnter2D(Collider2D other)
     {
-      Debug.Log("Trigger: "+ other.gameObject.name);
       Destroy(gameObject);
     } 
   }

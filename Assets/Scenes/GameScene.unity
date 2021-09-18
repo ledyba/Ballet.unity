@@ -262,6 +262,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2534838156371546359, guid: cefa5c9c2170a0244bc5f1b153c15f4d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534838156371546359, guid: cefa5c9c2170a0244bc5f1b153c15f4d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534838156371546359, guid: cefa5c9c2170a0244bc5f1b153c15f4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -387,7 +395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396710600}
   m_Layer: 0
-  m_Name: EnemyLife
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

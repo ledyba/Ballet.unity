@@ -513,7 +513,7 @@ PrefabInstance:
     - target: {fileID: 2312514847382739167, guid: d6c886e584fd4a546a2d1183cf4148b2, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
-      objectReference: {fileID: 790508494}
+      objectReference: {fileID: 790508495}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c886e584fd4a546a2d1183cf4148b2, type: 3}
 --- !u!4 &790508492 stripped
@@ -535,12 +535,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 790508493}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Script: {fileID: 11500000, guid: c35e7c37df354a746824759e16648d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals: []
-    m_Events: []
 --- !u!114 &790508495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,9 +547,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 790508493}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c35e7c37df354a746824759e16648d97, type: 3}
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals: []
+    m_Events: []
 --- !u!1001 &889998549
 PrefabInstance:
   m_ObjectHideFlags: 0

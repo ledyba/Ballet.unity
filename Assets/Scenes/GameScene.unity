@@ -641,7 +641,6 @@ Transform:
   - {fileID: 1833732102}
   - {fileID: 1465274137}
   - {fileID: 369778548}
-  - {fileID: 1714100998}
   m_Father: {fileID: 1122233357}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -761,57 +760,11 @@ PlayableDirector:
   m_ExposedReferences:
     m_References:
     - 2feac2f13334c6144b0b95b4f1a5e1f9: {fileID: 0}
+    - f1f398469f86d694bb9173e9d0dbc061: {fileID: 369778547}
+    - d205088db36feb847b913813fab14eb2: {fileID: 0}
+    - 72838c45249dfae4a84b71ec5d8c6a8e: {fileID: 369778547}
     - 66028225e1a40d94a961a593635aac71: {fileID: 0}
---- !u!1 &1714100997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1714100998}
-  - component: {fileID: 1714100999}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1714100998
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714100997}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1099117228}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!320 &1714100999
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714100997}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: d5e0e20e8fdb8dc459d2e432dc5818dc, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -545159287932600633, guid: d5e0e20e8fdb8dc459d2e432dc5818dc, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
+    - 3af90e544523e5548b4fcfd5983f1313: {fileID: 369778547}
 --- !u!1 &1792566521
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,8 +9,14 @@ namespace Timelines.Signals
     {
       if (notification is EnemyVanishEmitter)
       {
-        Destroy(gameObject);
+        Vanish();
       }
     }
+
+    public void Vanish()
+    {
+      Destroy(gameObject);
+    }
   }
+  
 }

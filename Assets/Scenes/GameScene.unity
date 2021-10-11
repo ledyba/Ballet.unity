@@ -990,11 +990,17 @@ PlayableDirector:
   m_ExposedReferences:
     m_References:
     - d4475f533abe20e458d2937d90c3f826: {fileID: 0}
+    - 0d3051847a67e8340b83c09ac822d921: {fileID: 652660568}
     - 2feac2f13334c6144b0b95b4f1a5e1f9: {fileID: 0}
+    - 2978bcae17d5b6f45b67dc67a025ad9c: {fileID: 1718010175}
     - a96891fc526b8c04cadfae5015c59cf8: {fileID: 369778547}
+    - df13c54ad4d2b904a976facb314ff335: {fileID: 1718010175}
+    - ee43fc27b9d72b54a8bb371122f2618f: {fileID: 1792607222}
     - 0efdefba63649294590116d1b34f7f90: {fileID: 369778547}
     - f1f398469f86d694bb9173e9d0dbc061: {fileID: 369778547}
+    - 0e5e8cff37104be47a33bd2aaa08a809: {fileID: 1718010175}
     - c86c5da4e6debb64389531da2b3e4044: {fileID: 652660568}
+    - f6c77e731f57260468ac2f737691cacd: {fileID: 1312764730}
     - fc2197047b849f34eb56a46eb3b4233a: {fileID: 1792607222}
     - 86e18f1f3f3a316488964633406065a5: {fileID: 369778547}
     - 0ee4b5124433be040a92a09136c8fade: {fileID: 369778547}

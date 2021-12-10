@@ -1,21 +1,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Player
-{
-  public class Move : MonoBehaviour
-  {
-    private PlayerInput _playerInput;
+namespace Player {
+  public class Move : MonoBehaviour {
+    private PlayerInput playerInput_;
     public Camera camera3d;
-    
-    private void Start()
-    {
-      _playerInput = GetComponent<PlayerInput>();
+
+    private void Start() {
+      playerInput_ = GetComponent<PlayerInput>();
     }
 
-    private void Update()
-    {
-      var move = _playerInput.currentActionMap["Move"].ReadValue<Vector2>();
+    private void Update() {
+      var move = playerInput_.currentActionMap["Move"].ReadValue<Vector2>();
       move *= Time.deltaTime * 10.0f;
       var trans = transform;
       var pos = trans.position;
@@ -28,6 +24,5 @@ namespace Player
 
       trans.position = camera3d.ViewportToWorldPoint(vp);
     }
-
   }
 }

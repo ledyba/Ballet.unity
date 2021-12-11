@@ -92,7 +92,7 @@ MonoBehaviour:
     m_DisplayName: Note
   m_Markers:
     m_Objects: []
---- !u!114 &-7860406140039888423
+--- !u!114 &-7750364524131048200
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,11 +105,11 @@ MonoBehaviour:
   m_Name: ControlPlayableAsset(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   sourceGameObject:
-    exposedName: c86c5da4e6debb64389531da2b3e4044
+    exposedName: 90335942863efdb4190f2d78bfa78296
     defaultValue: {fileID: 0}
   prefabGameObject: {fileID: 2312514847382739165, guid: d6c886e584fd4a546a2d1183cf4148b2, type: 3}
   updateParticle: 1
-  particleRandomSeed: 5
+  particleRandomSeed: 3
   updateDirector: 1
   updateITimeControl: 1
   searchHierarchy: 0
@@ -229,9 +229,9 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Note
   - m_Version: 1
-    m_Start: 3.283333333333333
+    m_Start: 6.116666666666666
     m_ClipIn: 0
-    m_Asset: {fileID: 2444809892003122369}
+    m_Asset: {fileID: -7750364524131048200}
     m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: -3885605497553553481}
@@ -641,29 +641,6 @@ MonoBehaviour:
     m_DisplayName: Spawn04
   m_Markers:
     m_Objects: []
---- !u!114 &2444809892003122369
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48853ae485fa386428341ac1ea122570, type: 3}
-  m_Name: ControlPlayableAsset(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  sourceGameObject:
-    exposedName: f6c77e731f57260468ac2f737691cacd
-    defaultValue: {fileID: 0}
-  prefabGameObject: {fileID: 2312514847382739165, guid: d6c886e584fd4a546a2d1183cf4148b2, type: 3}
-  updateParticle: 1
-  particleRandomSeed: 3
-  updateDirector: 1
-  updateITimeControl: 1
-  searchHierarchy: 0
-  active: 1
-  postPlayback: 2
 --- !u!114 &3252949313900298059
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -685,75 +662,6 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Version: 1
-    m_Start: 0.95
-    m_ClipIn: 0
-    m_Asset: {fileID: -7860406140039888423}
-    m_Duration: 3
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: 3252949313900298059}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: 0
-    m_BlendOutDuration: 0
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: Note
   - m_Version: 1
     m_Start: 4.216666666666667
     m_ClipIn: 0

@@ -1029,6 +1029,7 @@ PlayableDirector:
     - a1e288b52fa4cbf4e99d35c36d73cfec: {fileID: 1792607222}
     - b4ebe1f4d5617e04dafed27bf45f05dd: {fileID: 1312764730}
     - 2e5638ca07d09be41ab30b3b47a4198f: {fileID: 1312764730}
+    - 61af5341347831242a44af3426fdccf0: {fileID: 1718010175}
     - 3af90e544523e5548b4fcfd5983f1313: {fileID: 369778547}
 --- !u!1 &1718010175
 GameObject:

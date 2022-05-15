@@ -15,6 +15,6 @@
 
 ## Blender
 
--Substance Painter
+- Substance Painter
   - [Blender&UE4使いのためのSubstancePainter [前編] - YouTube](https://www.youtube.com/watch?v=eYEpNf_ij9g)
   - [Blender&UE4使いのためのSubstancePainter [後編] - YouTube](https://www.youtube.com/watch?v=7AlW4sk6GDw)
